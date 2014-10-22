@@ -20,6 +20,7 @@ require(['angular','app'],function(angular , app){
 	angular.element(document).ready(function(){
 		angular.bootstrap(root,['app']);
 	});
-	var color = "sdfgsgsg'"
-
+	app.controller('myfirstcontroller' , function($scope){
+		$scope.color = 'red' ;
+	})
 });
