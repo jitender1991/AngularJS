@@ -1,7 +1,6 @@
 ul>li {
 	list-style-type : none;
-	padding-right: 1000px;
-	position: absolute;
+	padding-right: 40px;
 	display: inline;
 }
 div.main{
@@ -11,4 +10,10 @@ div.main{
 	height: 25px;
 	border-radius: 10px;
 	margin-left: 230px;
+}
+div.vertical-line{
+	display: inline;
+	border : 2px solid black;
+	height: 42px;
+
 }
