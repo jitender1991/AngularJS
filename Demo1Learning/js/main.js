@@ -2,7 +2,8 @@
 require.config({
 	paths:{
 		'angular' :'../lib/angular' ,
-		'app' :'app'
+		'app' :'app' ,
+		'firstScreen' : 'controllers/firstScreen'
 	},
 	shim :{
 		'app' : { 
@@ -15,12 +16,9 @@ require.config({
 	}
 });
 
-require(['angular','app'],function(angular , app){
+require(['angular','app','firstScreen'],function(angular , app,firstScreen){
 	var root = document.getElementsByClassName('myapp');
 	angular.element(document).ready(function(){
 		angular.bootstrap(root,['app']);
 	});
-	app.controller('myfirstcontroller' , function($scope){
-		$scope.color = 'red' ;
-	})
 });

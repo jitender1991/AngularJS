@@ -1,0 +1,14 @@
+ul>li {
+	list-style-type : none;
+	padding-right: 1000px;
+	position: absolute;
+	display: inline;
+}
+div.main{
+	position: relative;
+	background-color: orange;
+	width: 800px;
+	height: 25px;
+	border-radius: 10px;
+	margin-left: 230px;
+}
