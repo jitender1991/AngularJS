@@ -1,3 +1,27 @@
 <h2>Help View</h2>
- 
 {{ message }}
+	<div ng-switch on='listtype'>
+		<div ng-switch-when ="showlist1">
+			<ng-include src="'templates/list1.html'"></ng-include>
+			<h1>LIST1</h1>
+			<p>{{listtype}}</p>
+		</div>
+		<div ng-switch-when ="showlist2">
+			<h1>LIST2</h1>
+			<p>{{listtype}}</p>
+		</div>
+
+		<div ng-switch-when ="showlist3">
+			<h1>LIST3</h1>
+			<p>{{listtype}}</p>
+		</div>
+
+		<div ng-switch-when ="showlist4">
+			<h1>LIST4</h1>
+			<p>{{listtype}}</p>
+		</div>
+		<div ng-switch-default>
+			<h1>default</h1>
+			<p>{{listtype}}</p>
+		</div>
+	</div>

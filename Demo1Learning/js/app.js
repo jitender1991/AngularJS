@@ -10,7 +10,7 @@ define(['angular','angularRoute','controllers','firstScreen','aboutController','
 						templateUrl : 'templates/home.html'  , 
 						controller:'homeController'
 					})
-					.when('/help',{
+					.when('/help/:param',{
 						templateUrl : 'templates/help.html'  ,
 						controller:'helpController'
 					})
@@ -29,15 +29,12 @@ define(['angular','angularRoute','controllers','firstScreen','aboutController','
 					});
 			}
 	]);
-
-	app.init = function(){
-		
+	
+	app.init = function(){	
 		var root = document.getElementsByClassName('myapp');
 		angular.element(document).ready(function(){
 			angular.bootstrap(root,['app']);
 		});
-
 	}
-	
 	return app;
 });
