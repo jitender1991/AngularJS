@@ -1,5 +1,10 @@
 <h2>Help View</h2>
-{{ message }}
+	<ul>
+		<li ng-click='listtype ="showlist1"'>Showlist1</li>
+		<li ng-click='listtype ="showlist2"'>Showlist2</li>
+		<li ng-click='listtype ="showlist3"'>Showlist3</li>
+		<li ng-click='listtype ="showlist4"'>Showlist4</li>
+	</ul>
 	<div ng-switch on='listtype'>
 		<div ng-switch-when ="showlist1">
 			<ng-include src="'templates/list1.html'"></ng-include>
