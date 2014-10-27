@@ -1,9 +1,16 @@
 'use strict';
 require.config({
 	paths:{
-		'angular' :'../lib/angular' ,
+		'angular' :'lib/angular' ,
+		'angularRoute' :'lib/angular-route',
 		'app' :'app' ,
-		'firstScreen' : 'controllers/firstScreen'
+		'controllers' :'controllers/controllers' ,
+		'firstScreen' : 'controllers/firstScreen',
+		'homeController' : 'controllers/homeController',
+		'helpController' : 'controllers/helpController',
+		'aboutController' : 'controllers/aboutController',
+		'bbbbController' : 'controllers/bbbbController',
+		'ccccController' : 'controllers/ccccController',
 	},
 	shim :{
 		'app' : { 
@@ -16,9 +23,9 @@ require.config({
 	}
 });
 
-require(['angular','app','firstScreen'],function(angular , app,firstScreen){
-	var root = document.getElementsByClassName('myapp');
-	angular.element(document).ready(function(){
-		angular.bootstrap(root,['app']);
-	});
+require(['app'],function(app){
+
+	app.init();
+
+
 });

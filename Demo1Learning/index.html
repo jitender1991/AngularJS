@@ -2,19 +2,22 @@
 	<head>
 		<title>angular Demo</title>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
-		<script src='lib/require.js' data-main='js/main.js'></script>
+		<script src='js/lib/require.js' data-main='js/main.js'></script>
 	</head>
 		<body>
 			<div class ='myapp'>
 				<div ng-controller='myfirstcontroller' class ='main'>
 					<ul>
-						<li>HOME </li><div class='vertical-line'></div>
-						<li>ABOUT US </li><div class='vertical-line'></div>
-						<li>HELP </li><div class='vertical-line'></div>
-						<li>BBBB </li><div class='vertical-line'></div>
-						<li>CCCC </li><div class='vertical-line'></div>
+						<li><a href="#home">HOME</a></li><div class='vertical-line'></div>
+						<li><a href="#aboutus">ABOUT US </a></li><div class='vertical-line'></div>
+						<li><a href="#help">HELP</a></li><div class='vertical-line'></div>
+						<li><a href="#bbbb">BBBB</a></li><div class='vertical-line'></div>
+						<li><a href="#cccc">CCCC</a></li><div class='vertical-line'></div>
+						<li>{{color}}</li>
 					</ul>
 				</div>
+				<ng-view></ng-view>
+				
 				
 			</div>
 	    </body>

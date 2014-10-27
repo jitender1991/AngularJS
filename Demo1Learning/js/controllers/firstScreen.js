@@ -1,5 +1,5 @@
-define(['app'] , function(app){	
-	var myfirstcontroller = app.controller('myfirstcontroller' , function($scope){
+define(['controllers'] , function(controllers){	
+	var myfirstcontroller = controllers.controller('myfirstcontroller' , function($scope){
 			$scope.color = 'red';
 		});
 	 return myfirstcontroller;
