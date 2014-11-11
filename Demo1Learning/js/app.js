@@ -1,10 +1,10 @@
 	'use strict';
-define(['angular','angularRoute','controllers','firstScreen','aboutController','homeController','helpController','bbbbController','ccccController'],function(angular,angularRoute,controllers,firstScreen,aboutController,homeController,helpController,bbbbController,ccccController){
+define(['angular','angularRoute','servicemodule','controllers','firstScreen','aboutController','homeController','helpController','bbbbController','ccccController','myprovider1','myprovider2','myservice1','myservice2','myfactory1','myfactory2','myconstant1','myconstant2','myvalue1','myvalue2'],function(angular,angularRoute,servicemodule,controllers,firstScreen,aboutController,homeController,helpController,bbbbController,ccccController,myprovider1,myprovider2,myservice1,myservice2,myfactory1,myfactory2,myconstant1,myconstant2,myvalue1,myvalue2){
 	
-	var app = angular.module('app',['controllers','ngRoute']);
+	var app = angular.module('app',['controllers','ngRoute','servicemodule']);
 	
-	app.config(['$routeProvider', 
-			function($routeProvider){
+	app.config(['$routeProvider','provider1Provider' ,
+			function($routeProvider,provider1Provider){
 				$routeProvider.
 					when('/',{ 
 						templateUrl : 'templates/home.html'  , 
@@ -26,7 +26,9 @@ define(['angular','angularRoute','controllers','firstScreen','aboutController','
 						, controller:'ccccController'
 					})
 					.otherwise({ redirectTo: '/' 
-					});
+				});
+				provider1Provider.config_var ='config_var changed in config fucntion';
+
 			}
 	]);
 	

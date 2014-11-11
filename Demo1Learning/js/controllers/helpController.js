@@ -5,7 +5,7 @@ define(['controllers'],function(controllers){
 		  $scope.listtype = $routeParams.param;
 		  $scope.$watch('listtype',function(val){
 		 		$location.path('help/'+val);
-		});
+		  });
 	});	
 
  	return helpController;
