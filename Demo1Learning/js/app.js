@@ -1,7 +1,7 @@
 	'use strict';
-define(['angular','angularRoute','servicemodule','controllers','firstScreen','aboutController','homeController','helpController','bbbbController','ccccController','myconstant1','myfactory2','myprovider1','myprovider2','myservice1','myservice2','myfactory1','myconstant2','myvalue1','myvalue2','directivemodule','mydirective1'],function(angular,angularRoute,servicemodule,controllers,firstScreen,aboutController,homeController,helpController,bbbbController,ccccController,myconstant1,myfactory2,myprovider1,myprovider2,myservice1,myservice2,myfactory1,myconstant2,myvalue1,myvalue2,directivemodule,mydirective1){
+define(['angular','angularRoute','servicemodule','controllers','firstScreen','aboutController','homeController','helpController','bbbbController','ccccController','myconstant1','myfactory2','myprovider1','myprovider2','myservice1','myservice2','myfactory1','myconstant2','myvalue1','myvalue2','directivemodule','mydirective1','mydirective2'],function(angular,angularRoute,servicemodule,controllers,firstScreen,aboutController,homeController,helpController,bbbbController,ccccController,myconstant1,myfactory2,myprovider1,myprovider2,myservice1,myservice2,myfactory1,myconstant2,myvalue1,myvalue2,directivemodule,mydirective1,mydirective2){
 	
-	var app = angular.module('app',['controllers','ngRoute','servicemodule']);
+	var app = angular.module('app',['controllers','ngRoute','servicemodule','directivemodule']);
 	
 	app.config(['$routeProvider','provider1Provider','constant2' ,
 			function($routeProvider,provider1Provider,constant2){

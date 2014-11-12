@@ -22,8 +22,9 @@ require.config({
 		'myconstant2' : 'Services/myconstant2',
 		'myvalue1' : 'Services/myvalue1',
 		'myvalue2' : 'Services/myvalue2',
-		'directivemodule' : 'Services/directivemodule',
-		'mydirective1' : 'Services/mydirective1'
+		'directivemodule' : 'directives/directivemodule',
+		'mydirective1' : 'directives/mydirective1',
+		'mydirective2' : 'directives/mydirective2'
 	},
 	shim :{
 		'app' : { 
