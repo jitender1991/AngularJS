@@ -1,19 +1,43 @@
-ul>li {
+html,body{
+	margin:0px;
+}
+div.myapp{
+	position:relative;		
+	min-height: 100%
+}
+div.header{
+	background-color: black;
+	border: 1px solid black;
+	width: 100%;
+	height: 20%;
+	position: fixed;
+	display: table;
+  	table-layout: fixed;
+}
+div.header > ul{
 	list-style-type : none;
-	padding-right: 40px;
-	display: inline;
+	position:absolute;
+	left:180 ;
+	 float: left;
+	 display: flex;
+  flex-direction: row;
 }
-div.main{
-	position: relative;
-	background-color: orange;
-	width: 800px;
-	height: 25px;
-	border-radius: 10px;
-	margin-left: 230px;
-}
-div.vertical-line{
-	display: inline;
-	border : 2px solid black;
-	height: 42px;
 
+div.header > ul li{
+	display: inline;
+	padding-right: 120px;
+
+}
+div.header a{
+	color:white;
+	text-decoration: none;
+}
+
+div.header a:hover {
+    color: green;
+}
+
+
+ul {
+  
 }
