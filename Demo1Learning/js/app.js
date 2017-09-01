@@ -33,6 +33,7 @@ define(['angular','angularRoute','servicemodule','controllers','firstScreen','ab
 
 			}
 	]);
+	console.log("test log");
 	
 	app.init = function(){	
 		var root = document.getElementsByClassName('myapp');
